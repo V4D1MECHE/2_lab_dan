@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Demo Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 1. Навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="#">Мой сайт</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- 2. Алерт -->
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Успех!</strong> Вы успешно зашли на сайт.
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+
+        <!-- 3. Карусель -->
+        <div id="carouselExample" class="carousel slide mb-4">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://img2.wallspic.com/attachments/originals/9/7/2/5/5/155279-cloud-water-plant-mountain-water_resources-5757x3238.jpg" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://wallpapers.com/images/hd/beautiful-sunset-pictures-ubxtuvfhpoampb6d.jpg" class="d-block w-100" alt="Slide 2">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- 4. Карточки в системе сетки -->
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://get.wallhere.com/photo/lake-mountains-rocks-1014412.jpg" class="card-img-top " height="200" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">Карточка 1</h5>
+                        <p class="card-text">Пример текста карточки.</p>
+                        <a href="#" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://i.pinimg.com/originals/ba/bd/6d/babd6d37eb2dd965c7f1dfb516d54094.jpg" class="card-img-top" height="200" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">Карточка 2</h5>
+                        <p class="card-text">Пример текста карточки.</p>
+                        <a href="#" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://azbukadekor.ru/upload/iblock/666/6667602108cfdd4601705f7c76f6585a.jpg" class="card-img-top" height="200" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">Карточка 3</h5>
+                        <p class="card-text">Пример текста карточки.</p>
+                        <a href="#" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. Прогресс бар -->
+        <div class="progress mb-4">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%"></div>
+        </div>
+
+        <!-- 6. Группа кнопок -->
+        <div class="btn-group mb-4" role="group">
+            <button type="button" class="btn btn-primary">Левая</button>
+            <button type="button" class="btn btn-secondary">Средняя</button>
+            <button type="button" class="btn btn-success">Правая</button>
+        </div>
+
+        <!-- 7. Форма -->
+        <form class="mb-4">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email адрес</label>
+                <input type="email" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Пароль</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+
+        <!-- 8. Бейджи -->
+        <div class="mb-4">
+            <h3>Метки <span class="badge bg-secondary">New</span></h3>
+            <button type="button" class="btn btn-primary">
+                Уведомления <span class="badge bg-secondary">4</span>
+            </button>
+        </div>
+
+        <!-- 9. Список с бейджами -->
+        <ul class="list-group mb-4">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Входящие письма
+                <span class="badge bg-primary rounded-pill">14</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Спам
+                <span class="badge bg-warning rounded-pill">2</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Черновики
+                <span class="badge bg-info rounded-pill">1</span>
+            </li>
+        </ul>
+
+        <!-- 10. Спиннер -->
+        <div class="spinner-border text-primary mb-4" role="status">
+            <span class="visually-hidden">Загрузка...</span>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
